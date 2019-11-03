@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>2048</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div id="root">
+        <div class="top">
+            <h1 class = "title">2048</h1>
+            <div class="wl"></div>
+        </div>
+        <div class = "game">
+                <div class="score"><strong>Score:</strong> 
+                    <div class = "num"></div>
+                </div>
+                <button class="new-game">New Game</button>
+                <div class = "grid-container">
+                    <div class="row">
+                        <div id = "0" class="cell"></div>
+                        <div id = "1" class="cell"></div>
+                        <div id = "2" class="cell"></div>
+                        <div id = "3" class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div id = "4" class="cell"></div>
+                        <div id = "5" class="cell"></div>
+                        <div id = "6" class="cell"></div>
+                        <div id = "7" class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div id = "8" class="cell"></div>
+                        <div id = "9" class="cell"></div>
+                        <div id = "10" class="cell"></div>
+                        <div id = "11" class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div id = "12" class="cell"></div>
+                        <div id = "13" class="cell"></div>
+                        <div id = "14" class="cell"></div>
+                        <div id = "15" class="cell"></div>
+                    </div>
+                </div>
+        </div>
+        </div>
+
+        <p class = "game-info">
+            <strong>Instructions:</strong> 
+            Use your arrow keys to move the tiles. When two tiles with the same number touch, they combine!
+            Try to get a tile with a number of 2048!
+        </p>
+        <p class = "created">
+            <strong>Created By:</strong> Everett Desern
+        </p>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src = "engine/render.js" type="module"></script>
+    </body>
+
+
+</html>
